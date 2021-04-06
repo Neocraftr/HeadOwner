@@ -1,6 +1,6 @@
 package de.TebosBrime.headowner.elements;
 
-import de.TebosBrime.headowner.utils.utils;
+import de.TebosBrime.headowner.utils.Utils;
 import net.labymod.ingamegui.ModuleCategory;
 import net.labymod.ingamegui.ModuleCategoryRegistry;
 import net.labymod.ingamegui.moduletypes.SimpleModule;
@@ -19,7 +19,7 @@ public class HeadModule extends SimpleModule {
 
     @Override
     public String getDisplayValue() {
-        utils.Skull skull = utils.getSkullLooking();
+        Utils.Skull skull = Utils.getSkullLooking();
         return skull.getDisplay();
     }
 
@@ -64,7 +64,7 @@ public class HeadModule extends SimpleModule {
 
     @Override
     public boolean isShown(){
-        utils.Skull skull = utils.getSkullLooking();
+        Utils.Skull skull = Utils.getSkullLooking();
 
         return skull.isShown();
     }

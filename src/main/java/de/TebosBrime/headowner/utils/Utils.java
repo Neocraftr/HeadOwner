@@ -12,7 +12,7 @@ import org.lwjgl.input.Keyboard;
 import java.util.Iterator;
 import java.util.UUID;
 
-public class utils {
+public class Utils {
 
     public static Skull getSkullLooking(){
         TileEntity tileEntity = getTileEntityLooking();

@@ -1,6 +1,6 @@
 package de.TebosBrime.headowner;
 
-import de.TebosBrime.headowner.utils.utils;
+import de.TebosBrime.headowner.utils.Utils;
 import net.labymod.main.LabyMod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
@@ -25,7 +25,7 @@ public class Listener {
 
         if (Keyboard.isKeyDown(HeadOwnerAddon.getSettings().getCopyKey())) {
             if (HeadOwnerAddon.getSettings().isEnabled()) {
-                utils.Skull skull = utils.getSkullLooking();
+                Utils.Skull skull = Utils.getSkullLooking();
                 String name = skull.getCopy();
 
                 StringSelection stringSelection = new StringSelection(name);
