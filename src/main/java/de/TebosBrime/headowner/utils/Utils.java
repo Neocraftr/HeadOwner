@@ -22,6 +22,7 @@ public class Utils {
 
     private static TileEntity getTileEntityLooking(){
         try {
+            if(LabyModCore.getMinecraft().getPlayer() == null) return null;
             MovingObjectPosition movingObjectPosition = LabyModCore.getMinecraft().getPlayer().rayTrace(HeadOwnerAddon.getSettings().getLength(), 1.0F);
             if (movingObjectPosition == null){
                 return null;
